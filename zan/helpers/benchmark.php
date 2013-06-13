@@ -40,7 +40,7 @@ if(!defined("_access")) {
 function benchMarkEnd() {
 	global $startTime;
 	
-	echo '<p class="center small">'. __(_("Load time:")) .' '. (microtime(TRUE) - $startTime) .' '. __(_("seconds")) .'</p>';
+	echo '<p class="center small">'. __(__("Load time:")) .' '. (microtime(TRUE) - $startTime) .' '. __(__("seconds")) .'</p>';
 }
 
 /**
