@@ -21,8 +21,8 @@ class Sialen_Controller extends ZP_Controller {
 		$vars["message"] = __(__("Hello World"));
 		$vars["view"]	 = $this->view("show", TRUE);
 		
-		//$this->render("content", $vars);
-		$this->view("show", $vars);
+		$this->render("content", $vars);
+		//$this->view("show", $vars);
 	}
 
 	public function test($param1 = "Hola", $param2 = "Adios") {
