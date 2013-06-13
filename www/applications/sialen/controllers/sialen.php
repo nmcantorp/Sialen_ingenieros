@@ -12,6 +12,7 @@ class Sialen_Controller extends ZP_Controller {
 		$this->Templates = $this->core("Templates");
 
 		$this->Templates->theme();
+		$this->title("Prueba");
 		#$this->Default_Model = $this->model("Default_Model");
 	}
 	
@@ -24,10 +25,10 @@ class Sialen_Controller extends ZP_Controller {
 		$this->view("show", $vars);
 	}
 
-	/*public function test($param1 = "Hola", $param2 = "Adios") {
+	public function test($param1 = "Hola", $param2 = "Adios") {
 		print "New dispatcher it's works fine: $param1, $param2";
 	}
-
+/*
 	public function show($message) {
 		$vars["message"] = $message;
 		$vars["view"]	 = $this->view("show", TRUE);
