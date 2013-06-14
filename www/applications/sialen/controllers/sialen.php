@@ -10,15 +10,20 @@ class Sialen_Controller extends ZP_Controller {
 		$this->app("sialen");
 		
 		$this->Templates = $this->core("Templates");
-
 		$this->Templates->theme();
 		$this->title("Prueba");
 		#$this->Default_Model = $this->model("Default_Model");
 	}
 	
 	public function index() {	
+		$src = "www/applications/sialen/views/images/Penguins.jpg";
+		$dir = 'www' . _sh . 'lib' . _sh . 'files' . _sh . 'images' . _sh . 'gallery' . _sh . "myalbum" . _sh;
+
 		$this->Templates->CSS('default', 'default', TRUE);
+
 		$vars["message"] = __(__("Hello World"));
+		$vars["imagen"]  = img($src, array('height'=>'100px', 'width'=>'150px'));
+		$vars["dir"]	 = $dir;
 		$vars["view"]	 = $this->view("show", TRUE);
 		
 		$this->render("content", $vars);

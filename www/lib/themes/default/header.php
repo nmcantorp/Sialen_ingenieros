@@ -28,7 +28,7 @@
 		<div class="topbar">
 			<div class="fill">
 				<div class="container">
-					<a class="brand" href="#">ZanPHP.com</a>
+					<!-- <a class="brand" href="#">ZanPHP.com</a> -->
 					
 					<ul class="nav">
 						<li class="active"><a href="#">Home</a></li>
@@ -36,11 +36,11 @@
 						<li><a href="#contact">Contact</a></li>
 					</ul>
           
-					<form action="#" class="pull-right">
+					<!-- <form action="#" class="pull-right">
 						<input class="input-small" type="text" placeholder="Username">
 						<input class="input-small" type="password" placeholder="Password">
 						<button class="btn" type="submit">Sign in</button>
-					</form>
+					</form> -->
 				</div>
 			</div>
 		</div>
@@ -48,7 +48,7 @@
 		<div class="container">
 			<div class="content">
 				<div class="page-header">
-					<h1>ZanPHP <small>PHP5 Framework</small></h1>
+					<h1>Sialen Ingenieros</h1>
 				</div>
 				
 				<div class="row">

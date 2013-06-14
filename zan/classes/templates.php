@@ -208,7 +208,7 @@ class ZP_Templates extends ZP_Load {
      * @return void
      */
 	public function getTitle() {
-		return (is_null($this->title)) ? get("webName") ." - ". get("webSlogan") : $this->title;
+		return (is_null($this->title)) ? get("webName") ." | ". get("webSlogan") : $this->title;
 	}
 	
     /**
@@ -333,7 +333,11 @@ class ZP_Templates extends ZP_Load {
      * @return void
      */
 	public function title($title = NULL) {
-		$this->title = is_null($title) ? get("webName") ." - ". get("webSlogan") : get("webName") ." - ". get("webSlogan") ." - ". $title;
+		if (is_null(get("webName"))){
+			$this->title = is_null($title) ? get("webName") ." | ". get("webSlogan") : get("webName") ." | ". get("webSlogan") ." | ". $title;
+		}else{
+			$this->title = is_null($title) ? get("webName") : get("webName") ." | ". $title;
+		}
 	}
 	
     /**
