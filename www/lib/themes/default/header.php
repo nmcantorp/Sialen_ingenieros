@@ -6,8 +6,15 @@
 	if(isMobile()) {
 		include "mobile/header.php";
 	} else {
+		$this->app("sialen");
+
 ?>
 <!DOCTYPE html>
+<?php //session_start();
+
+$_SESSION['campodelform'] = 'asignada';
+echo $_SESSION['campodelform'];
+?>
 <html lang="<?php print get("webLang"); ?>">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -34,6 +41,8 @@
 						<li class="active"><a href="#">Home</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#contact">Contact</a></li>
+
+						<li><a href="#"><?php echo $this->execute("Login_Controller", "Val_Session");?></a></li>
 					</ul>
           
 					<!-- <form action="#" class="pull-right">

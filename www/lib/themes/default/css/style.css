@@ -12,6 +12,7 @@ body {
 
 .container {
 	width: 820px; 
+	height: auto;
 }
 
 .container > .content {
